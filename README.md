@@ -1,1 +1,1 @@
-# BD_gimnasio
+# Proyecto final fundamentos de bases de datos
