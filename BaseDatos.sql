@@ -1,1 +1,0 @@
-SELECT * FROM gimnasio_workfit2.empleado;
