@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ClienteDAO {
-    
+    /*
     public List<Cliente> obtenerCliente (){
         
         try {
@@ -34,6 +34,24 @@ public class ClienteDAO {
         }
         return null;
     }
+    */
     
+    
+    public Cliente obtenerCliente(String contraseña, int cedula){
+        Cliente cliente;
+        
+        try{
+            Connection conexion = Conectar.obtenerconexion();
+            String sql = "SELECT * from cliente c WHERE c.cedula = " + cedula +" AND c.contraseña = " + contraseña;
+            PreparedStatement ps = conexion.prepareStatement(sql);
+            ResultSet respuesta = ps.executeQuery();
+            cliente = new Cliente(respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),Integer.parseInt(respuesta.getString("gym")),Integer.parseInt(respuesta.getString("plan")),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("sexo").charAt(0),respuesta.getString("direccion"),
+                    respuesta.getString("ocupacion"),respuesta.getString("correo"),respuesta.getDate("fecha_na"),respuesta.getDate("fecha_ini"),respuesta.getDate("fecha_fin"),respuesta.getString("contraseña"));
+            return cliente;
+        }
+        catch (Exception e){
+            throw new RuntimeException("Error en la consulta" , e);
+        }
+    }
     
 }
