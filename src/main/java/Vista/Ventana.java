@@ -338,7 +338,7 @@ public class Ventana extends javax.swing.JFrame {
 
         lbinfoBasico.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbinfoBasico.setText("Horas trabajadas: ");
-        pndatosCoach.add(lbinfoBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, 210, 40));
+        pndatosCoach.add(lbinfoBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 210, 40));
 
         lbEntrenador.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbEntrenador.setText("Un numero ");
@@ -424,7 +424,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel13.setText("Ocupación: ");
-        pnCliente1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 160, 40));
+        pnCliente1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 160, 40));
 
         jLabel15.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel15.setText("Sexo:");
@@ -452,7 +452,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel22.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel22.setText("Plan: ");
-        pnCliente1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 610, 80, 40));
+        pnCliente1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 80, 40));
 
         jLabel23.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel23.setText("Correo:");
@@ -473,7 +473,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel25.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel25.setText("Sede: ");
-        pnCliente1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 80, 40));
+        pnCliente1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, 80, 40));
 
         lbtelClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbtelClie.setText("Datos");
@@ -485,23 +485,23 @@ public class Ventana extends javax.swing.JFrame {
 
         lbocuClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbocuClie.setText("Datos");
-        pnCliente1.add(lbocuClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 490, 230, 40));
+        pnCliente1.add(lbocuClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, 230, 40));
 
         lbsedeClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbsedeClie.setText("Datos");
-        pnCliente1.add(lbsedeClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 230, 40));
+        pnCliente1.add(lbsedeClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 540, 230, 40));
 
         lbplanClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbplanClie.setText("Datos");
-        pnCliente1.add(lbplanClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 610, 250, 40));
+        pnCliente1.add(lbplanClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 600, 250, 40));
 
         lbfInicio.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbfInicio.setText("Datos");
-        pnCliente1.add(lbfInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 460, 250, 40));
+        pnCliente1.add(lbfInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 460, 250, 40));
 
         lbfFin.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbfFin.setText("Datos");
-        pnCliente1.add(lbfFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 520, 250, 40));
+        pnCliente1.add(lbfFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 520, 250, 40));
 
         jLabel21.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel21.setText("Fecha de fin: ");
@@ -509,23 +509,23 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel26.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel26.setText("Fecha de nacimiento: ");
-        pnCliente1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, 230, 40));
+        pnCliente1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, 240, 40));
 
         jLabel27.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel27.setText("Fecha de inicio: ");
-        pnCliente1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 170, 40));
+        pnCliente1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 180, 40));
 
         lbsexClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbsexClie.setText("Datos");
-        pnCliente1.add(lbsexClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, 250, 40));
+        pnCliente1.add(lbsexClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 250, 40));
 
         lbcorClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbcorClie.setText("Datos");
-        pnCliente1.add(lbcorClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 250, 40));
+        pnCliente1.add(lbcorClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 340, 250, 40));
 
         lbfecnaClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbfecnaClie.setText("Datos");
-        pnCliente1.add(lbfecnaClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, 250, 40));
+        pnCliente1.add(lbfecnaClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 250, 40));
 
         pnCliente.add(pnCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 660));
 
