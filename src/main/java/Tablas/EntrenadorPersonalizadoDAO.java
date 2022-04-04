@@ -27,7 +27,7 @@ public class EntrenadorPersonalizadoDAO {
             ResultSet respuesta = ps.executeQuery();
             respuesta.next();
             entrenadorPersonalizado = new EntrenadorPersonalizado(Integer.parseInt(respuesta.getString("num_cli")),respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),respuesta.getString("direccion"),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("correo"),Integer.parseInt(respuesta.getString("id_gym"))
-                    ,respuesta.getDate("fecha_nacimiento"),respuesta.getString("sexo").charAt(0),respuesta.getString("contraseña"),Double.parseDouble(respuesta.getString("sueldo")),Integer.parseInt(respuesta.getString("id_cli")));
+                    ,respuesta.getDate("fecha_nacimiento"),respuesta.getString("sexo").charAt(0),respuesta.getString("contraseña"),Integer.parseInt(respuesta.getString("sueldo")));
             ps.close();
             return entrenadorPersonalizado;
         }catch(Exception e){

@@ -2,10 +2,9 @@ package Vista;
 
 import Tablas.Cliente;
 import Tablas.ClienteDAO;
-import Tablas.Empleado;
-import Tablas.EmpleadoDAO;
+import Tablas.EntrenadorDAO;
+import Tablas.Entrenador;
 import java.awt.CardLayout;
-import java.awt.LayoutManager;
 import javax.swing.JOptionPane;
 
 public class Modelo {
@@ -13,8 +12,8 @@ public class Modelo {
     private Ventana vista;
     private ClienteDAO cliente;
     private Cliente afiliado;
-    private EmpleadoDAO empleado;
-    private Empleado trabajador;
+    private EntrenadorDAO empleado;
+    private Entrenador trabajador;
     
     public Ventana getVista() {
         if (vista == null)
@@ -33,9 +32,9 @@ public class Modelo {
         getVista().setSize(400, 511);     
     }
         
-    public EmpleadoDAO getEmpleado(){
+    public EntrenadorDAO getEmpleado(){
         if(empleado == null){
-            empleado = new EmpleadoDAO();
+            empleado = new EntrenadorDAO();
         }
         return empleado;
     }
@@ -68,7 +67,7 @@ public class Modelo {
         Integer usuario = Integer.parseInt(getVista().getJtxUsuario().getText());
         String contraseña = String.copyValueOf(getVista().getJpaContraseña().getPassword());
        try { 
-          trabajador = getEmpleado().obtenerEmpleado(contraseña,usuario);
+          trabajador = getEmpleado().obtenerEntrenador(contraseña,usuario);
           cambiarvistaEntrenador("pnEntrenador");
           getVista().setSize(1040, 760);
           actulizarVistaEntrenador();
@@ -117,9 +116,30 @@ public class Modelo {
     
     
      public void actulizarVistaEntrenador (){
-      
-         getVista().getLbNombre_coach().setText(String.valueOf(trabajador.getNombre()));
          
+         
+         
+         
+         
+         if (trabajador.getGym()== 1){
+            getVista().getLbNomSede().setText("Sede A");
+        }
+        else if (trabajador.getGym()== 2){
+            getVista().getLbNomSede().setText("Sede B");
+        }
+        else if (trabajador.getGym()== 3){
+            getVista().getLbNomSede().setText("Sede C");
+        }
+      
+        getVista().getLbNombre_coach().setText(String.valueOf(trabajador.getNombre()));
+        getVista().getLbCeduEmpl().setText(String.valueOf(trabajador.getCedula()));
+        getVista().getLbFecNac().setText(String.valueOf(trabajador.getFecha_nacimiento()));
+        getVista().getLbSalEmpl().setText(String.valueOf(trabajador.getSueldo()));
+        getVista().getLbSexEmpl().setText(String.valueOf(trabajador.getSexo()));
+        getVista().getLbNumSed().setText(String.valueOf(trabajador.getGym()));
+        getVista().getLbDirecEmpl().setText(String.valueOf(trabajador.getDireccion()));
+        getVista().getLbCorrEmpl().setText(String.valueOf(trabajador.getCorreo()));
+        getVista().getLbTeleEmpl().setText(String.valueOf(trabajador.getTelefono()));
     }
     
 }

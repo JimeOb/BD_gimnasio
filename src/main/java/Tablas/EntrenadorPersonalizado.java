@@ -15,8 +15,8 @@ public class EntrenadorPersonalizado extends Entrenador {
     
     private int num_cli;
 
-    public EntrenadorPersonalizado(int num_cli, String nombre, int cedula, String direccion, int telefono, String correo, int gym, Date fecha_nacimiento, char sexo, String contraseña, double sueldo, int id_cli) {
-        super(nombre, cedula, direccion, telefono, correo, gym, fecha_nacimiento, sexo, contraseña, sueldo, id_cli);
+    public EntrenadorPersonalizado(int num_cli, String nombre, int cedula, String direccion, int telefono, String correo, int gym, Date fecha_nacimiento, char sexo, String contraseña, int sueldo) {
+        super(nombre, cedula, direccion, telefono, correo, gym, fecha_nacimiento, sexo, contraseña, sueldo);
         this.num_cli = num_cli;
     }
 
@@ -31,7 +31,7 @@ public class EntrenadorPersonalizado extends Entrenador {
     @Override
     public String toString() {
         return "EntrenadorPersonalizado{" + "nombre= " + this.getNombre() + ", cedula= " + this.getCedula() + ", direccón= " + this.getDireccion() + ", telefono= " + this.getTelefono() + ", correo= " + this.getCorreo() +
-                ", gym= " + this.getGym() + ",fecha nacimiento= " + this.getFecha_nacimiento() + ", sexo= " + this.getSexo() + ", sueldo=" + this.getSueldo() + ", id_cli=" + this.getId_cli() + "num_cli=" + num_cli + '}';
+                ", gym= " + this.getGym() + ",fecha nacimiento= " + this.getFecha_nacimiento() + ", sexo= " + this.getSexo() + ", sueldo=" + this.getSueldo() + ", num_cli=" + num_cli + '}';
     }
     
     

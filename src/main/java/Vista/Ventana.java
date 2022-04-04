@@ -61,10 +61,6 @@ public class Ventana extends javax.swing.JFrame {
         return lbtelClie;
     }
 
-    public JLabel getLbNombre_coach() {
-        return lbNombre_coach;
-    }
-
     public JLabel getLbcedCli() {
         return lbcedCli;
     }
@@ -75,10 +71,6 @@ public class Ventana extends javax.swing.JFrame {
 
     public JLabel getLbdirClie() {
         return lbdirClie;
-    }
-
-    public JLabel getLbdirEmple() {
-        return lbdirEmple;
     }
 
     public JLabel getLbfFin() {
@@ -101,28 +93,12 @@ public class Ventana extends javax.swing.JFrame {
         return lbinfoPerso;
     }
 
-    public JLabel getLbncargoEmple() {
-        return lbncargoEmple;
-    }
-
     public JLabel getLbnomClie() {
         return lbnomClie;
     }
 
     public JLabel getLbnomInstr() {
         return lbnomInstr;
-    }
-
-    public JLabel getLbnomsedeEmple() {
-        return lbnomsedeEmple;
-    }
-
-    public JLabel getLbnumEntre() {
-        return lbnumEntre;
-    }
-
-    public JLabel getLbnumiEmpe() {
-        return lbnumiEmpe;
     }
 
     public JLabel getLbocuClie() {
@@ -133,10 +109,6 @@ public class Ventana extends javax.swing.JFrame {
         return lbplanClie;
     }
 
-    public JLabel getLbsalEmple() {
-        return lbsalEmple;
-    }
-
     public JLabel getLbsedeClie() {
         return lbsedeClie;
     }
@@ -144,10 +116,52 @@ public class Ventana extends javax.swing.JFrame {
     public JLabel getLbsexClie() {
         return lbsexClie;
     }
-
-    public JLabel getLbtelEmple() {
-        return lbtelEmple;
+    
+    public JLabel getLbNombre_coach() {
+        return lbNombre_coach;
     }
+
+    public JLabel getLbTeleEmpl() {
+        return lbNumSed;
+    }
+    
+    public JLabel getLbSalEmpl() {
+        return lbTeleEmpl;
+    }
+
+    public JLabel getLbCeduEmpl() {
+        return lbCeduEmpl;
+    }
+
+    public JLabel getLbCorrEmpl() {
+        return lbCorrEmpl;
+    }
+
+    public JLabel getLbDirecEmpl() {
+        return lbDirecEmpl;
+    }
+
+    public JLabel getLbEntrenador() {
+        return lbEntrenador;
+    }
+
+    public JLabel getLbFecNac() {
+        return lbFecNac;
+    }
+
+    public JLabel getLbNomSede() {
+        return lbNomSede;
+    }
+
+    public JLabel getLbNumSed() {
+        return lbNumSed;
+    }
+
+    public JLabel getLbSexEmpl() {
+        return lbSexEmpl;
+    }
+    
+    
 
     public JComboBox<String> getCmbTipo() {
         return cmbTipo;
@@ -178,22 +192,27 @@ public class Ventana extends javax.swing.JFrame {
         lbNombre_coach = new javax.swing.JLabel();
         tbpCoach = new javax.swing.JTabbedPane();
         pndatosCoach = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        lbncargoEmple = new javax.swing.JLabel();
-        lbsalEmple = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        lbnumEntre = new javax.swing.JLabel();
+        lbNomSede = new javax.swing.JLabel();
+        lbCorrEmpl = new javax.swing.JLabel();
+        lbTeleEmpl = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        lbtelEmple = new javax.swing.JLabel();
+        lbNumSed = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        lbdirEmple = new javax.swing.JLabel();
+        lbSalEmpl = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         lbnomsedeEmple = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         lbinfoBasico = new javax.swing.JLabel();
-        lbnumiEmpe = new javax.swing.JLabel();
+        lbEntrenador = new javax.swing.JLabel();
         lbinfoPerso = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        lbDirecEmpl = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        lbCeduEmpl = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        lbSexEmpl = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        lbFecNac = new javax.swing.JLabel();
         pnConsulta = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -276,68 +295,90 @@ public class Ventana extends javax.swing.JFrame {
 
         pndatosCoach.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pndatosCoach.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 170, 230));
+        lbNomSede.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lbNomSede.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbNomSede.setText("hola");
+        pndatosCoach.add(lbNomSede, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 400, 170, 20));
 
-        lbncargoEmple.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbncargoEmple.setText("Numero :v");
-        pndatosCoach.add(lbncargoEmple, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 250, 40));
+        lbCorrEmpl.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbCorrEmpl.setText("Numero :v");
+        pndatosCoach.add(lbCorrEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, 250, 40));
 
-        lbsalEmple.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbsalEmple.setText("blablabla");
-        pndatosCoach.add(lbsalEmple, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 240, 120, 40));
-
-        jLabel8.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel8.setText("Codigo empleado: ");
-        pndatosCoach.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 250, 40));
-
-        lbnumEntre.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbnumEntre.setText("Numero :v");
-        pndatosCoach.add(lbnumEntre, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, 250, 40));
+        lbTeleEmpl.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbTeleEmpl.setText("blablabla");
+        pndatosCoach.add(lbTeleEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 190, 120, 40));
 
         jLabel9.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel9.setText("Cargo: ");
-        pndatosCoach.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, 80, 40));
+        jLabel9.setText("Correo:");
+        pndatosCoach.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 80, 40));
 
-        lbtelEmple.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbtelEmple.setText("ola :3");
-        pndatosCoach.add(lbtelEmple, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, 120, 40));
+        lbNumSed.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbNumSed.setText("ola :3");
+        pndatosCoach.add(lbNumSed, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 120, 40));
 
         jLabel11.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel11.setText("Dirección: ");
-        pndatosCoach.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 120, 40));
+        pndatosCoach.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, 120, 40));
 
-        lbdirEmple.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbdirEmple.setText("blablabla");
-        pndatosCoach.add(lbdirEmple, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 120, 40));
+        lbSalEmpl.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbSalEmpl.setText("blablabla");
+        pndatosCoach.add(lbSalEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 120, 40));
 
         jLabel12.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel12.setText("Salario: ");
-        pndatosCoach.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 120, 40));
+        pndatosCoach.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, 40));
 
         lbnomsedeEmple.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbnomsedeEmple.setText("Nom sede");
-        pndatosCoach.add(lbnomsedeEmple, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, 120, 40));
+        lbnomsedeEmple.setText("Nom sede:");
+        pndatosCoach.add(lbnomsedeEmple, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 130, 40));
 
         jLabel14.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel14.setText("Telefono: ");
-        pndatosCoach.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 120, 40));
+        pndatosCoach.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 190, 120, 40));
 
         lbinfoBasico.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbinfoBasico.setText("Horas trabajadas: ");
-        pndatosCoach.add(lbinfoBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 190, 40));
+        pndatosCoach.add(lbinfoBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, 210, 40));
 
-        lbnumiEmpe.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbnumiEmpe.setText("Un numero ");
-        pndatosCoach.add(lbnumiEmpe, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 420, 160, 40));
+        lbEntrenador.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbEntrenador.setText("Un numero ");
+        pndatosCoach.add(lbEntrenador, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 160, 40));
 
         lbinfoPerso.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbinfoPerso.setText("Clientes asociados: ");
-        pndatosCoach.add(lbinfoPerso, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 210, 40));
+        pndatosCoach.add(lbinfoPerso, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 220, 40));
 
         jLabel17.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel17.setText("Sede: ");
-        pndatosCoach.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 120, 40));
+        pndatosCoach.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 80, 40));
+
+        lbDirecEmpl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lbDirecEmpl.setText("codigo aca");
+        pndatosCoach.add(lbDirecEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 60, 120, 40));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel8.setText("Cedula empleado:");
+        pndatosCoach.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
+
+        lbCeduEmpl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lbCeduEmpl.setText("jLabel10");
+        pndatosCoach.add(lbCeduEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 100, 20));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel28.setText("Sexo:");
+        pndatosCoach.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
+
+        lbSexEmpl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lbSexEmpl.setText("jLabel29");
+        pndatosCoach.add(lbSexEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel30.setText("Fecha de nacimiento:");
+        pndatosCoach.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 30));
+
+        lbFecNac.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lbFecNac.setText("jLabel31");
+        pndatosCoach.add(lbFecNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
 
         tbpCoach.addTab("Datos basicos del entrenador", pndatosCoach);
 
@@ -523,37 +564,42 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lbCeduEmpl;
+    private javax.swing.JLabel lbCorrEmpl;
+    private javax.swing.JLabel lbDirecEmpl;
+    private javax.swing.JLabel lbEntrenador;
+    private javax.swing.JLabel lbFecNac;
+    private javax.swing.JLabel lbNomSede;
     private javax.swing.JLabel lbNombre_coach;
+    private javax.swing.JLabel lbNumSed;
+    private javax.swing.JLabel lbSalEmpl;
+    private javax.swing.JLabel lbSexEmpl;
+    private javax.swing.JLabel lbTeleEmpl;
     private javax.swing.JLabel lbcedCli;
     private javax.swing.JLabel lbcorClie;
     private javax.swing.JLabel lbdirClie;
-    private javax.swing.JLabel lbdirEmple;
     private javax.swing.JLabel lbfFin;
     private javax.swing.JLabel lbfInicio;
     private javax.swing.JLabel lbfecnaClie;
     private javax.swing.JLabel lbinfoBasico;
     private javax.swing.JLabel lbinfoPerso;
-    private javax.swing.JLabel lbncargoEmple;
     private javax.swing.JLabel lbnomClie;
     private javax.swing.JLabel lbnomInstr;
     private javax.swing.JLabel lbnomsedeEmple;
-    private javax.swing.JLabel lbnumEntre;
-    private javax.swing.JLabel lbnumiEmpe;
     private javax.swing.JLabel lbocuClie;
     private javax.swing.JLabel lbplanClie;
-    private javax.swing.JLabel lbsalEmple;
     private javax.swing.JLabel lbsedeClie;
     private javax.swing.JLabel lbsexClie;
     private javax.swing.JLabel lbtelClie;
-    private javax.swing.JLabel lbtelEmple;
     private javax.swing.JPanel pnCliente;
     private javax.swing.JPanel pnCliente1;
     private javax.swing.JPanel pnConsulta;

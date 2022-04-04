@@ -23,7 +23,7 @@ public class EntrenadorGeneralDAO {
             ResultSet respuesta = ps.executeQuery();
             respuesta.next();
             entrenadorGeneral = new EntrenadorGeneral(Integer.parseInt(respuesta.getString("Hor_tra")),respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),respuesta.getString("direccion"),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("correo"),Integer.parseInt(respuesta.getString("id_gym"))
-                    ,respuesta.getDate("fecha_nacimiento"),respuesta.getString("sexo").charAt(0),respuesta.getString("contraseña"),Double.parseDouble(respuesta.getString("sueldo")),Integer.parseInt(respuesta.getString("id_cli")));
+                    ,respuesta.getDate("fecha_nacimiento"),respuesta.getString("sexo").charAt(0),respuesta.getString("contraseña"),Integer.parseInt(respuesta.getString("sueldo")));
             ps.close();
             return entrenadorGeneral;
         }catch(Exception e){
