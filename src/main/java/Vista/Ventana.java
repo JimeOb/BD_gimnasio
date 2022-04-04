@@ -59,6 +59,96 @@ public class Ventana extends javax.swing.JFrame {
     public JLabel getLbtelClie() {
         return lbtelClie;
     }
+
+    public JLabel getLbNombre_coach() {
+        return lbNombre_coach;
+    }
+
+    public JLabel getLbcedCli() {
+        return lbcedCli;
+    }
+
+    public JLabel getLbcorClie() {
+        return lbcorClie;
+    }
+
+    public JLabel getLbdirClie() {
+        return lbdirClie;
+    }
+
+    public JLabel getLbdirEmple() {
+        return lbdirEmple;
+    }
+
+    public JLabel getLbfFin() {
+        return lbfFin;
+    }
+
+    public JLabel getLbfInicio() {
+        return lbfInicio;
+    }
+
+    public JLabel getLbfecnaClie() {
+        return lbfecnaClie;
+    }
+
+    public JLabel getLbinfoBasico() {
+        return lbinfoBasico;
+    }
+
+    public JLabel getLbinfoPerso() {
+        return lbinfoPerso;
+    }
+
+    public JLabel getLbncargoEmple() {
+        return lbncargoEmple;
+    }
+
+    public JLabel getLbnomClie() {
+        return lbnomClie;
+    }
+
+    public JLabel getLbnomInstr() {
+        return lbnomInstr;
+    }
+
+    public JLabel getLbnomsedeEmple() {
+        return lbnomsedeEmple;
+    }
+
+    public JLabel getLbnumEntre() {
+        return lbnumEntre;
+    }
+
+    public JLabel getLbnumiEmpe() {
+        return lbnumiEmpe;
+    }
+
+    public JLabel getLbocuClie() {
+        return lbocuClie;
+    }
+
+    public JLabel getLbplanClie() {
+        return lbplanClie;
+    }
+
+    public JLabel getLbsalEmple() {
+        return lbsalEmple;
+    }
+
+    public JLabel getLbsedeClie() {
+        return lbsedeClie;
+    }
+
+    public JLabel getLbsexClie() {
+        return lbsexClie;
+    }
+
+    public JLabel getLbtelEmple() {
+        return lbtelEmple;
+    }
+    
+    
     
     
     
@@ -104,7 +194,6 @@ public class Ventana extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         pnCliente = new javax.swing.JPanel();
         pnCliente1 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -112,7 +201,7 @@ public class Ventana extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         lbnomClie = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        lbcodClie = new javax.swing.JLabel();
+        lbcedCli = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
@@ -121,9 +210,17 @@ public class Ventana extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         lbtelClie = new javax.swing.JLabel();
         lbdirClie = new javax.swing.JLabel();
-        lbmpagoClie = new javax.swing.JLabel();
+        lbocuClie = new javax.swing.JLabel();
         lbsedeClie = new javax.swing.JLabel();
-        lbplanClie1 = new javax.swing.JLabel();
+        lbplanClie = new javax.swing.JLabel();
+        lbfInicio = new javax.swing.JLabel();
+        lbfFin = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        lbsexClie = new javax.swing.JLabel();
+        lbcorClie = new javax.swing.JLabel();
+        lbfecnaClie = new javax.swing.JLabel();
 
         jFormattedTextField1.setText("jFormattedTextField1");
 
@@ -266,85 +363,114 @@ public class Ventana extends javax.swing.JFrame {
 
         pnCliente1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pnCliente1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 200, 230));
-
         jLabel18.setFont(new java.awt.Font("Lato Black", 0, 24)); // NOI18N
         jLabel18.setText("Instructor: ");
-        pnCliente1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 130, 40));
+        pnCliente1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 130, 40));
 
         jLabel13.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel13.setText("Medio de pago: ");
-        pnCliente1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 170, 40));
+        jLabel13.setText("Ocupación: ");
+        pnCliente1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 160, 40));
 
         jLabel15.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel15.setText("Fecha de fin: ");
-        pnCliente1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 570, 170, 40));
+        jLabel15.setText("Sexo:");
+        pnCliente1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 170, 40));
 
         jLabel16.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel16.setText("Telefono: ");
-        pnCliente1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 120, 40));
+        pnCliente1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 120, 40));
 
         jLabel19.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel19.setText("Dirección: ");
-        pnCliente1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 120, 40));
+        pnCliente1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 120, 40));
 
         lbnomClie.setFont(new java.awt.Font("Lato Black", 0, 24)); // NOI18N
         lbnomClie.setText("nombre cliente");
-        pnCliente1.add(lbnomClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, 560, 40));
+        pnCliente1.add(lbnomClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 560, 40));
 
         jLabel20.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel20.setText("Codigo del cliente: ");
-        pnCliente1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 220, 40));
+        jLabel20.setText("Cedula:");
+        pnCliente1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 100, 40));
 
-        lbcodClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbcodClie.setText("Datos");
-        pnCliente1.add(lbcodClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 80, 40));
+        lbcedCli.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbcedCli.setText("Datos");
+        pnCliente1.add(lbcedCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 240, 40));
 
         jLabel22.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel22.setText("Plan: ");
-        pnCliente1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 430, 80, 40));
+        pnCliente1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 610, 80, 40));
 
         jLabel23.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel23.setText("Fecha de inicio: ");
-        pnCliente1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 170, 40));
+        jLabel23.setText("Correo:");
+        pnCliente1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 340, 170, 40));
 
         jLabel24.setFont(new java.awt.Font("Lato Black", 0, 24)); // NOI18N
         jLabel24.setText("Bienvenido: ");
-        pnCliente1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 180, 40));
+        pnCliente1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 180, 40));
 
         lbnomInstr.setFont(new java.awt.Font("Lato Black", 0, 24)); // NOI18N
         lbnomInstr.setText("nombre cliente");
-        pnCliente1.add(lbnomInstr, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 560, 40));
+        pnCliente1.add(lbnomInstr, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 560, 40));
 
         btnSalirCli.setBackground(new java.awt.Color(255, 0, 0));
         btnSalirCli.setFont(new java.awt.Font("Lato Black", 0, 14)); // NOI18N
         btnSalirCli.setText("Salir");
-        pnCliente1.add(btnSalirCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 630, 180, -1));
+        pnCliente1.add(btnSalirCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 590, 200, 70));
 
         jLabel25.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel25.setText("Sede: ");
-        pnCliente1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 80, 40));
+        pnCliente1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 80, 40));
 
         lbtelClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbtelClie.setText("Datos");
-        pnCliente1.add(lbtelClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 230, 40));
+        pnCliente1.add(lbtelClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 230, 40));
 
         lbdirClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbdirClie.setText("Datos");
-        pnCliente1.add(lbdirClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 80, 40));
+        pnCliente1.add(lbdirClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, 230, 40));
 
-        lbmpagoClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbmpagoClie.setText("Datos");
-        pnCliente1.add(lbmpagoClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 80, 40));
+        lbocuClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbocuClie.setText("Datos");
+        pnCliente1.add(lbocuClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 490, 230, 40));
 
         lbsedeClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbsedeClie.setText("Datos");
-        pnCliente1.add(lbsedeClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, 80, 40));
+        pnCliente1.add(lbsedeClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 230, 40));
 
-        lbplanClie1.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbplanClie1.setText("Datos");
-        pnCliente1.add(lbplanClie1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 430, 80, 40));
+        lbplanClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbplanClie.setText("Datos");
+        pnCliente1.add(lbplanClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 610, 250, 40));
+
+        lbfInicio.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbfInicio.setText("Datos");
+        pnCliente1.add(lbfInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 460, 250, 40));
+
+        lbfFin.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbfFin.setText("Datos");
+        pnCliente1.add(lbfFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 520, 250, 40));
+
+        jLabel21.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        jLabel21.setText("Fecha de fin: ");
+        pnCliente1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 520, 170, 40));
+
+        jLabel26.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        jLabel26.setText("Fecha de nacimiento: ");
+        pnCliente1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, 230, 40));
+
+        jLabel27.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        jLabel27.setText("Fecha de inicio: ");
+        pnCliente1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 170, 40));
+
+        lbsexClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbsexClie.setText("Datos");
+        pnCliente1.add(lbsexClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, 250, 40));
+
+        lbcorClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbcorClie.setText("Datos");
+        pnCliente1.add(lbcorClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 250, 40));
+
+        lbfecnaClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        lbfecnaClie.setText("Datos");
+        pnCliente1.add(lbfecnaClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, 250, 40));
 
         pnCliente.add(pnCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 660));
 
@@ -375,34 +501,41 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lbNombre_coach;
-    private javax.swing.JLabel lbcodClie;
+    private javax.swing.JLabel lbcedCli;
+    private javax.swing.JLabel lbcorClie;
     private javax.swing.JLabel lbdirClie;
     private javax.swing.JLabel lbdirEmple;
+    private javax.swing.JLabel lbfFin;
+    private javax.swing.JLabel lbfInicio;
+    private javax.swing.JLabel lbfecnaClie;
     private javax.swing.JLabel lbinfoBasico;
     private javax.swing.JLabel lbinfoPerso;
-    private javax.swing.JLabel lbmpagoClie;
     private javax.swing.JLabel lbncargoEmple;
     private javax.swing.JLabel lbnomClie;
     private javax.swing.JLabel lbnomInstr;
     private javax.swing.JLabel lbnomsedeEmple;
     private javax.swing.JLabel lbnumEntre;
     private javax.swing.JLabel lbnumiEmpe;
-    private javax.swing.JLabel lbplanClie1;
+    private javax.swing.JLabel lbocuClie;
+    private javax.swing.JLabel lbplanClie;
     private javax.swing.JLabel lbsalEmple;
     private javax.swing.JLabel lbsedeClie;
+    private javax.swing.JLabel lbsexClie;
     private javax.swing.JLabel lbtelClie;
     private javax.swing.JLabel lbtelEmple;
     private javax.swing.JPanel pnCliente;
@@ -417,5 +550,6 @@ public class Ventana extends javax.swing.JFrame {
 
     private void capturarEventos() {
      btnAcceder.addActionListener(getControl());
+     btnSalirCli.addActionListener(getControl());
     }
 }

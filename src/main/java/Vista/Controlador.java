@@ -16,6 +16,9 @@ public class Controlador implements ActionListener {
         if(e.getSource() == modelo.getVista().getBtnAcceder()){
             modelo.iniciarSesion();
         }
+        else if(e.getSource() == modelo.getVista().getBtnSalirCli()){
+            System.exit(0);
+        }
     }
     
 }
