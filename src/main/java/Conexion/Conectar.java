@@ -11,7 +11,7 @@ public class Conectar {
      
     private static final String driver = "com.mysql.jdbc.Driver";
     private static final String user = "root";
-    private static final String pass = "1234"; /* Contraseña de cada uno */
+    private static final String pass = "Sgarcia202010201705268"; /* Contraseña de cada uno */
     private static final String url = "jdbc:mysql://localhost:3306/gimnasio_workfit2"; /* Si amerita el caso editar el puerto de conexión */
     public static Connection conexion;
     

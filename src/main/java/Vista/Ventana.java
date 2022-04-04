@@ -85,14 +85,6 @@ public class Ventana extends javax.swing.JFrame {
         return lbfecnaClie;
     }
 
-    public JLabel getLbinfoBasico() {
-        return lbinfoBasico;
-    }
-
-    public JLabel getLbinfoPerso() {
-        return lbinfoPerso;
-    }
-
     public JLabel getLbnomClie() {
         return lbnomClie;
     }
@@ -122,11 +114,11 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     public JLabel getLbTeleEmpl() {
-        return lbNumSed;
+        return lbTeleEmpl;
     }
     
     public JLabel getLbSalEmpl() {
-        return lbTeleEmpl;
+        return lbSalEmpl;
     }
 
     public JLabel getLbCeduEmpl() {
@@ -139,10 +131,6 @@ public class Ventana extends javax.swing.JFrame {
 
     public JLabel getLbDirecEmpl() {
         return lbDirecEmpl;
-    }
-
-    public JLabel getLbEntrenador() {
-        return lbEntrenador;
     }
 
     public JLabel getLbFecNac() {
@@ -202,9 +190,6 @@ public class Ventana extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         lbnomsedeEmple = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        lbinfoBasico = new javax.swing.JLabel();
-        lbEntrenador = new javax.swing.JLabel();
-        lbinfoPerso = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         lbDirecEmpl = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -302,15 +287,15 @@ public class Ventana extends javax.swing.JFrame {
 
         lbCorrEmpl.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbCorrEmpl.setText("Numero :v");
-        pndatosCoach.add(lbCorrEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, 250, 40));
+        pndatosCoach.add(lbCorrEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 120, 270, 40));
 
         lbTeleEmpl.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbTeleEmpl.setText("blablabla");
-        pndatosCoach.add(lbTeleEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 190, 120, 40));
+        pndatosCoach.add(lbTeleEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 180, 40));
 
         jLabel9.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel9.setText("Correo:");
-        pndatosCoach.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 80, 40));
+        pndatosCoach.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 80, 40));
 
         lbNumSed.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbNumSed.setText("ola :3");
@@ -318,11 +303,11 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel11.setText("Dirección: ");
-        pndatosCoach.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, 120, 40));
+        pndatosCoach.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 120, 40));
 
         lbSalEmpl.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbSalEmpl.setText("blablabla");
-        pndatosCoach.add(lbSalEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 120, 40));
+        pndatosCoach.add(lbSalEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 270, 40));
 
         jLabel12.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel12.setText("Salario: ");
@@ -334,19 +319,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel14.setText("Telefono: ");
-        pndatosCoach.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 190, 120, 40));
-
-        lbinfoBasico.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbinfoBasico.setText("Horas trabajadas: ");
-        pndatosCoach.add(lbinfoBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 210, 40));
-
-        lbEntrenador.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbEntrenador.setText("Un numero ");
-        pndatosCoach.add(lbEntrenador, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 160, 40));
-
-        lbinfoPerso.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        lbinfoPerso.setText("Clientes asociados: ");
-        pndatosCoach.add(lbinfoPerso, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 220, 40));
+        pndatosCoach.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 120, 40));
 
         jLabel17.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         jLabel17.setText("Sede: ");
@@ -354,7 +327,7 @@ public class Ventana extends javax.swing.JFrame {
 
         lbDirecEmpl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lbDirecEmpl.setText("codigo aca");
-        pndatosCoach.add(lbDirecEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 60, 120, 40));
+        pndatosCoach.add(lbDirecEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 60, 350, 40));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel8.setText("Cedula empleado:");
@@ -362,7 +335,7 @@ public class Ventana extends javax.swing.JFrame {
 
         lbCeduEmpl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lbCeduEmpl.setText("jLabel10");
-        pndatosCoach.add(lbCeduEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 100, 20));
+        pndatosCoach.add(lbCeduEmpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 310, 20));
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel28.setText("Sexo:");
@@ -378,7 +351,7 @@ public class Ventana extends javax.swing.JFrame {
 
         lbFecNac.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lbFecNac.setText("jLabel31");
-        pndatosCoach.add(lbFecNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
+        pndatosCoach.add(lbFecNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 310, -1));
 
         tbpCoach.addTab("Datos basicos del entrenador", pndatosCoach);
 
@@ -463,7 +436,7 @@ public class Ventana extends javax.swing.JFrame {
         pnCliente1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 180, 40));
 
         lbnomInstr.setFont(new java.awt.Font("Lato Black", 0, 24)); // NOI18N
-        lbnomInstr.setText("nombre cliente");
+        lbnomInstr.setText("N/A");
         pnCliente1.add(lbnomInstr, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 560, 40));
 
         btnSalirCli.setBackground(new java.awt.Color(255, 0, 0));
@@ -517,7 +490,7 @@ public class Ventana extends javax.swing.JFrame {
 
         lbsexClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbsexClie.setText("Datos");
-        pnCliente1.add(lbsexClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 250, 40));
+        pnCliente1.add(lbsexClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 300, 40));
 
         lbcorClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbcorClie.setText("Datos");
@@ -576,7 +549,6 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel lbCeduEmpl;
     private javax.swing.JLabel lbCorrEmpl;
     private javax.swing.JLabel lbDirecEmpl;
-    private javax.swing.JLabel lbEntrenador;
     private javax.swing.JLabel lbFecNac;
     private javax.swing.JLabel lbNomSede;
     private javax.swing.JLabel lbNombre_coach;
@@ -590,8 +562,6 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel lbfFin;
     private javax.swing.JLabel lbfInicio;
     private javax.swing.JLabel lbfecnaClie;
-    private javax.swing.JLabel lbinfoBasico;
-    private javax.swing.JLabel lbinfoPerso;
     private javax.swing.JLabel lbnomClie;
     private javax.swing.JLabel lbnomInstr;
     private javax.swing.JLabel lbnomsedeEmple;
