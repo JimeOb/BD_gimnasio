@@ -41,16 +41,12 @@ public class ClienteDAO {
         
         try{
             Cliente cliente;
-            boolean existe = false;
             Connection conexion = Conectar.obtenerconexion();
             String sql = "SELECT * from cliente c WHERE c.cedula = ? AND c.contraseña = ?";
             PreparedStatement ps = conexion.prepareStatement(sql);
             ps.setInt(1, cedula);
             ps.setString(2, contraseña);
             ResultSet respuesta = ps.executeQuery();
-            while (respuesta.next()){
-               existe = true;
-            }
             ps.close();
             
             cliente = new Cliente(respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),Integer.parseInt(respuesta.getString("gym")),Integer.parseInt(respuesta.getString("plan")),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("sexo").charAt(0),respuesta.getString("direccion"),
