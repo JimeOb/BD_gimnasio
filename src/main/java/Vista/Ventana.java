@@ -1,6 +1,8 @@
 package Vista;
 
 import javax.swing.JButton;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 
 public class Ventana extends javax.swing.JFrame {
@@ -38,6 +40,14 @@ public class Ventana extends javax.swing.JFrame {
 
     public JButton getBtnSalirCli() {
         return btnSalirCli;
+    }
+
+    public JPasswordField getJpaContraseña() {
+        return JpaContraseña;
+    }
+
+    public JTextField getJtxUsuario() {
+        return JtxUsuario;
     }
     
     

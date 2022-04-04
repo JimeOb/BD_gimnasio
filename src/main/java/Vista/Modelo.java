@@ -1,9 +1,13 @@
 package Vista;
 
+import Tablas.ClienteDAO;
+import javax.swing.JOptionPane;
+
 public class Modelo {
     
     private Ventana vista;
-
+    private ClienteDAO cliente;
+    
     public Ventana getVista() {
         if (vista == null)
             vista = new Ventana(this);
@@ -17,7 +21,14 @@ public class Modelo {
     
     public void iniciarSesion(){
         
+        Integer usuario = Integer.parseInt(getVista().getJtxUsuario().getText());
+        String contraseña = String.copyValueOf(getVista().getJpaContraseña().getPassword());
         
+       try {
+           cliente.obtenerCliente(contraseña,usuario);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Los datos ingresados son incorrectos","Error", JOptionPane.ERROR_MESSAGE);
+        }
         
     }
 }
