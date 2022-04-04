@@ -19,13 +19,7 @@ public class EntrenadorGeneral extends Entrenador {
         super(nombre, cedula, direccion, telefono, correo, gym, fecha_nacimiento, sexo, contraseña, sueldo, id_cli);
         this.hor_tra = hor_tra;
     }
-
-    EntrenadorGeneral(String string, int parseInt, String string0, int parseInt0, String string1, int parseInt1, Date date, char charAt, String string2) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
-    
-
     public int getHor_tra() {
         return hor_tra;
     }

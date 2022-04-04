@@ -1,6 +1,7 @@
 package Vista;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
@@ -147,6 +148,10 @@ public class Ventana extends javax.swing.JFrame {
     public JLabel getLbtelEmple() {
         return lbtelEmple;
     }
+
+    public JComboBox<String> getCmbTipo() {
+        return cmbTipo;
+    }
     
     
     
@@ -167,6 +172,8 @@ public class Ventana extends javax.swing.JFrame {
         JtxUsuario = new javax.swing.JTextField();
         JpaContraseña = new javax.swing.JPasswordField();
         btnAcceder = new javax.swing.JButton();
+        cmbTipo = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
         pnEntrenador = new javax.swing.JPanel();
         lbNombre_coach = new javax.swing.JLabel();
         tbpCoach = new javax.swing.JTabbedPane();
@@ -239,8 +246,8 @@ public class Ventana extends javax.swing.JFrame {
         pnIniciar.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 140, 30));
 
         jLabel3.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
-        jLabel3.setText("Usuario:");
-        pnIniciar.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 110, 30));
+        jLabel3.setText("Tipo de usuario:");
+        pnIniciar.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 180, 30));
 
         JtxUsuario.setFont(new java.awt.Font("Lato", 0, 14)); // NOI18N
         JtxUsuario.setToolTipText("");
@@ -251,6 +258,13 @@ public class Ventana extends javax.swing.JFrame {
         btnAcceder.setFont(new java.awt.Font("Lato", 1, 18)); // NOI18N
         btnAcceder.setText("Iniciar Sesión");
         pnIniciar.add(btnAcceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 160, 50));
+
+        cmbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ENTRENADOR", "CLIENTE" }));
+        pnIniciar.add(cmbTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, 130, 40));
+
+        jLabel5.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
+        jLabel5.setText("Usuario:");
+        pnIniciar.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 110, 30));
 
         pnInfo.add(pnIniciar, "card2");
 
@@ -357,7 +371,7 @@ public class Ventana extends javax.swing.JFrame {
         btnSalir.setText("Salir");
         pnEntrenador.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 240, 60));
 
-        pnInfo.add(pnEntrenador, "card3");
+        pnInfo.add(pnEntrenador, "pnEntrenador");
 
         pnCliente.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -488,6 +502,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JButton btnAcceder;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnSalirCli;
+    private javax.swing.JComboBox<String> cmbTipo;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
@@ -510,6 +525,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -551,5 +567,6 @@ public class Ventana extends javax.swing.JFrame {
     private void capturarEventos() {
      btnAcceder.addActionListener(getControl());
      btnSalirCli.addActionListener(getControl());
+     btnSalir.addActionListener(getControl());
     }
 }

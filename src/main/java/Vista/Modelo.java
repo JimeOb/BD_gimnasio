@@ -2,6 +2,8 @@ package Vista;
 
 import Tablas.Cliente;
 import Tablas.ClienteDAO;
+import Tablas.Empleado;
+import Tablas.EmpleadoDAO;
 import java.awt.CardLayout;
 import java.awt.LayoutManager;
 import javax.swing.JOptionPane;
@@ -11,6 +13,8 @@ public class Modelo {
     private Ventana vista;
     private ClienteDAO cliente;
     private Cliente afiliado;
+    private EmpleadoDAO empleado;
+    private Empleado trabajador;
     
     public Ventana getVista() {
         if (vista == null)
@@ -28,15 +32,46 @@ public class Modelo {
         getVista().setVisible(true);
         getVista().setSize(400, 511);     
     }
+        
+    public EmpleadoDAO getEmpleado(){
+        if(empleado == null){
+            empleado = new EmpleadoDAO();
+        }
+        return empleado;
+    }
     
-    public void iniciarSesion(){
+    
+    public void inicio(){
+        if(getVista().getCmbTipo().getSelectedIndex() == 0){
+            iniciarSesionEmpleado();
+        }
+        else if(getVista().getCmbTipo().getSelectedIndex() == 1){
+            iniciarSesionCliente();
+        }
+    }
+    
+        
+    public void iniciarSesionCliente(){
         Integer usuario = Integer.parseInt(getVista().getJtxUsuario().getText());
         String contraseña = String.copyValueOf(getVista().getJpaContraseña().getPassword());
        try { 
-           afiliado = getCliente().obtenerCliente(contraseña,usuario);
+          afiliado = getCliente().obtenerCliente(contraseña,usuario);
           cambiarvistaCliente("pnCliente");
           getVista().setSize(1040, 760);
-          actulizarvista();
+          actulizarVistaCliente();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Los datos ingresados son incorrectos","Error", JOptionPane.ERROR_MESSAGE);
+        }    
+    }
+    
+    public void iniciarSesionEmpleado(){
+        Integer usuario = Integer.parseInt(getVista().getJtxUsuario().getText());
+        String contraseña = String.copyValueOf(getVista().getJpaContraseña().getPassword());
+       try { 
+          trabajador = getEmpleado().obtenerEmpleado(contraseña,usuario);
+          cambiarvistaEntrenador("pnEntrenador");
+          getVista().setSize(1040, 760);
+          actulizarVistaEntrenador();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null,"Los datos ingresados son incorrectos","Error", JOptionPane.ERROR_MESSAGE);
         }    
@@ -47,14 +82,19 @@ public class Modelo {
         layout.show(getVista().getPnInfo(), pnCliente);
     }
     
-    public void actulizarvista (){
+    public void cambiarvistaEntrenador(String pnEntrenador) {
+        final CardLayout layout = (CardLayout) getVista().getPnInfo().getLayout();
+        layout.show(getVista().getPnInfo(), pnEntrenador);
+    }
+    
+    public void actulizarVistaCliente (){
         if (afiliado.getGym()== 1){
             getVista().getLbsedeClie().setText("Sede A");
         }
         else if (afiliado.getGym()== 2){
             getVista().getLbsedeClie().setText("Sede B");
         }
-        else if (afiliado.getGym()== 2){
+        else if (afiliado.getGym()== 3){
             getVista().getLbsedeClie().setText("Sede C");
         }
         if (afiliado.getPlan()==1){
@@ -73,6 +113,13 @@ public class Modelo {
         getVista().getLbcedCli().setText(String.valueOf(afiliado.getCedula()));
         getVista().getLbnomClie().setText((afiliado.getNombre()));
         getVista().getLbtelClie().setText(String.valueOf(afiliado.getTelefono()));
+    }
+    
+    
+     public void actulizarVistaEntrenador (){
+      
+         getVista().getLbNombre_coach().setText(String.valueOf(trabajador.getNombre()));
+         
     }
     
 }
