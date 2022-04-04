@@ -1,13 +1,16 @@
 
+import Conexion.Conectar;
 import Tablas.ClienteDAO;
 import Tablas.Cliente;
 import Vista.Modelo;
+import java.sql.Connection;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Launcher {
     
    private Modelo app;
+   private Conectar conexion;
     
     public Launcher() {
         app = new Modelo();
@@ -16,7 +19,7 @@ public class Launcher {
     
   public static void main(String[] args) {
       
-       System.out.println("hehehe");
+       //Connection conexion = Conectar.obtenerconexion();
         new Launcher();
 
         /*

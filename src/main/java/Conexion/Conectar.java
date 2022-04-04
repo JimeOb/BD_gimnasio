@@ -11,14 +11,15 @@ public class Conectar {
      
     private static final String driver = "com.mysql.jdbc.Driver";
     private static final String user = "root";
-    private static final String pass = ""; /* Contraseña de cada uno */
-    private static final String url = "jdbc:mysql://localhost:3306/gimnasio_workfit2"; /* Si amerita el caso editar el puerto de conexión */
+    private static final String pass = "123456789"; /* Contraseña de cada uno */
+    private static final String url = "jdbc:mysql://localhost:3309/gimnasio_workfit2"; /* Si amerita el caso editar el puerto de conexión */
     public static Connection conexion;
     
     public static Connection obtenerconexion (){
         try{
             if(conexion == null){
                 conexion = DriverManager.getConnection(url,user,pass);
+                System.out.println("Se conecto");
             }
             return conexion;
         } catch (SQLException e){

@@ -1,6 +1,8 @@
 package Vista;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
@@ -48,6 +50,14 @@ public class Ventana extends javax.swing.JFrame {
 
     public JTextField getJtxUsuario() {
         return JtxUsuario;
+    }
+
+    public JPanel getPnInfo() {
+        return pnInfo;
+    }
+
+    public JLabel getLbtelClie() {
+        return lbtelClie;
     }
     
     
@@ -235,7 +245,7 @@ public class Ventana extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        pnConsulta.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
+        pnConsulta.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
         tbpCoach.addTab("Consultas", pnConsulta);
 
@@ -318,7 +328,7 @@ public class Ventana extends javax.swing.JFrame {
 
         lbtelClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbtelClie.setText("Datos");
-        pnCliente1.add(lbtelClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 80, 40));
+        pnCliente1.add(lbtelClie, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 230, 40));
 
         lbdirClie.setFont(new java.awt.Font("Lato", 0, 24)); // NOI18N
         lbdirClie.setText("Datos");
@@ -338,7 +348,7 @@ public class Ventana extends javax.swing.JFrame {
 
         pnCliente.add(pnCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 660));
 
-        pnInfo.add(pnCliente, "card4");
+        pnInfo.add(pnCliente, "pnCliente");
 
         getContentPane().add(pnInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 3, 1010, 660));
 

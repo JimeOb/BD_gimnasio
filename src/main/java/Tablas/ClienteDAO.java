@@ -47,15 +47,15 @@ public class ClienteDAO {
             ps.setInt(1, cedula);
             ps.setString(2, contraseña);
             ResultSet respuesta = ps.executeQuery();
+            respuesta.next();
+            cliente = new Cliente(respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),Integer.parseInt(respuesta.getString("id_gym")),Integer.parseInt(respuesta.getString("id_plan")),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("sexo").charAt(0),respuesta.getString("dirección"),
+                    respuesta.getString("ocupacion"),respuesta.getString("correo"),respuesta.getDate("fecha_nacimiento"),respuesta.getDate("fecha_ini"),respuesta.getDate("fecha_fin"),respuesta.getString("contraseña"));
             ps.close();
-            
-            cliente = new Cliente(respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),Integer.parseInt(respuesta.getString("gym")),Integer.parseInt(respuesta.getString("plan")),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("sexo").charAt(0),respuesta.getString("direccion"),
-                    respuesta.getString("ocupacion"),respuesta.getString("correo"),respuesta.getDate("fecha_na"),respuesta.getDate("fecha_ini"),respuesta.getDate("fecha_fin"),respuesta.getString("contraseña"));
             return cliente;
         }
         catch (Exception e){
             throw new RuntimeException("Error en la consulta" , e);
         }
     }
-    
+
 }
