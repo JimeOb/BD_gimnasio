@@ -42,8 +42,10 @@ public class ClienteDAO {
         
         try{
             Connection conexion = Conectar.obtenerconexion();
-            String sql = "SELECT * from cliente c WHERE c.cedula = " + cedula +" AND c.contraseña = " + contraseña;
+            String sql = "SELECT * from cliente c WHERE c.cedula = ? AND c.contraseña = ?";
             PreparedStatement ps = conexion.prepareStatement(sql);
+            ps.setInt(1, cedula);
+            ps.setString(2, contraseña);
             ResultSet respuesta = ps.executeQuery();
             cliente = new Cliente(respuesta.getString("nombre"),Integer.parseInt(respuesta.getString("cedula")),Integer.parseInt(respuesta.getString("gym")),Integer.parseInt(respuesta.getString("plan")),Integer.parseInt(respuesta.getString("telefono")),respuesta.getString("sexo").charAt(0),respuesta.getString("direccion"),
                     respuesta.getString("ocupacion"),respuesta.getString("correo"),respuesta.getDate("fecha_na"),respuesta.getDate("fecha_ini"),respuesta.getDate("fecha_fin"),respuesta.getString("contraseña"));
